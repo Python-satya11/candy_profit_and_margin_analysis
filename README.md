@@ -61,7 +61,7 @@ The original fields cover:
 
 The complete explanation of each dataset column is maintained separately.
 
-**[View the Column Dictionary](docs/data_dictionary.md)**
+**[View the Column Dictionary](data_dictionary.md)**
 
 ---
 
@@ -727,7 +727,7 @@ The Jupyter Notebook can be opened in Jupyter Notebook, JupyterLab, or an equiva
 - **[Jupyter Notebook - Nassau_Candy_Profitability_Analysis.ipynb](Nassau_Candy_Profitability_Analysis.ipynb)**
 - **[Streamlit Application - app.py](app.py)**
 - **[Column Dictionary](docs/data_dictionary.md)**
-- **[Sales vs Profit Analysis Chart](sales_vs_profit.png)**
+- **![Sales vs Profit Analysis Chart](sales_vs_profit.png)**
 
 These project files provide the reproducible analytical workflow, supporting documentation, dashboard implementation, and visual output for the Nassau Candy profitability analysis.
 
