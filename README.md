@@ -47,7 +47,8 @@ The original fields cover:
 
 The complete explanation of the dataset columns is maintained separately.
 
-**[View the Column Dictionary](docs/data_dictionary.md)**
+**[View the Column Dictionary](
+data_dictionary.md)**
 
 ---
 
