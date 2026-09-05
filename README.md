@@ -518,7 +518,7 @@ The dashboard displays four filter-responsive KPIs:
 | Profit per Unit | "filtered_df[""Gross Profit""].sum() / filtered_df[""Units Sold""].sum()" | Measures average profitability per individual item sold to identify high-margin product volume.
 |Revenue Contribution | "(filtered_df[""Product Sales""].sum() / total_sales) * 100" | Shows the percentage share a product or category contributes to overall business revenue. |
 | Profit Contribution | "(filtered_df[""Product Profit""].sum() / total_profit) * 100" | Shows the percentage share a product or category contributes to overall company gross profit. |
-| Margin Volatility | "filtered_df.groupby(""Period"")[""Gross Margin %""].std()",Tracks the standard deviation or variability of gross margin over time to assess pricing stability and cost fluctuations. |
+| Margin Volatility | "filtered_df.groupby(""Period"")[""Gross Margin %""].std()" | Tracks the standard deviation or variability of gross margin over time to assess pricing stability and cost fluctuations. |
 ## 9.3 Charts and Dashboard Parameters
 
 ### Product-Level Margin Leaderboard
