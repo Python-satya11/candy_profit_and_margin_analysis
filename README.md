@@ -512,13 +512,13 @@ All four filters affect the working dataset and therefore update the dashboard K
 
 The dashboard displays four filter-responsive KPIs:
 
-| KPI | Calculation | Purpose |
+| KPI | Calculation LOGIC | Purpose |
 |---|---|---|
-| Total Sales | `filtered_df["Sales"].sum()` | Total sales value in the current filtered view |
-| Total Profit | `filtered_df["Gross Profit"].sum()` | Total gross profit in the current filtered view |
-| Avg Gross Margin % | `filtered_df["Gross Margin %"].mean()` | Average order-level gross margin in the current view |
-| Products in View | `filtered_df["Product Name"].nunique()` | Number of unique products remaining after filters |
-
+| Gross Margin (%)|"(filtered_df[""Gross Profit""].sum() / filtered_df[""Sales""].sum()) * 100"|"Evaluates the overall profitability ratio of sales| indicating how efficiently revenue is converted into gross profit." |
+| Profit per Unit | "filtered_df[""Gross Profit""].sum() / filtered_df[""Units Sold""].sum()" | Measures average profitability per individual item sold to identify high-margin product volume.
+|Revenue Contribution | "(filtered_df[""Product Sales""].sum() / total_sales) * 100" | Shows the percentage share a product or category contributes to overall business revenue. |
+| Profit Contribution | "(filtered_df[""Product Profit""].sum() / total_profit) * 100" | Shows the percentage share a product or category contributes to overall company gross profit. |
+| Margin Volatility | "filtered_df.groupby(""Period"")[""Gross Margin %""].std()",Tracks the standard deviation or variability of gross margin over time to assess pricing stability and cost fluctuations. |
 ## 9.3 Charts and Dashboard Parameters
 
 ### Product-Level Margin Leaderboard
